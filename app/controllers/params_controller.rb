@@ -25,4 +25,17 @@ class ParamsController < ApplicationController
     input_value = params["this_is_a_key"]
     render json: {message: "The url segment is #{input_value}"}
   end
+
+  # def body_params
+  #   winning_number = 33
+  #   input_value = params["the_users_guess"].to_i 
+  #   if input_guess > winning_number 
+  #     output_message = "Pick lower!"
+  #   elsif input_guess < winning_number
+  #     output_message = "Pick higher!"
+  #   else
+  #     output_message = "You win!"
+  #   end
+  #   render json: {message: output_message}
+  # end
 end

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get "/segment_params/:this_is_a_key", controller: "params", action: "segment_params"
 
   get "/guess_segment/:the_users_guess", controller: "params", action: "guess"
+
+  post "/body_params", controller: "params", action: "guess"
 end
